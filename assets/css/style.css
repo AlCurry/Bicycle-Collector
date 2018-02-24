@@ -1,0 +1,46 @@
+/* 
+Assignment 3 - psychic game with js and a bit of bootstrap styling
+
+Al Curry  February 8, 2018
+
+GWU full stack development program
+
+*/
+html,body{height:100%;}
+
+.container {
+    height:100%;
+    /* text-align: center; */
+}
+
+#bg {
+    background-image: url("../images/Hedwigenkoog.jpeg");
+    background-repeat: no-repeat;
+    border-radius: 0;
+    background-position: center;
+ }
+   #bg2 {
+    background-image: url("../images/Karolinenkoog.jpeg");
+    background-repeat: no-repeat;
+    border-radius: 0;
+    background-position: center;  
+   }
+.img-thumbnail {
+     /* width: 25%; */
+     height: auto;
+}
+
+ #h1, #overText {
+     color: rgba(20, 22, 24, 0.975);
+     font-weight: bold;
+ }
+
+ .bikeButton{
+    margin: 5px;
+    border-radius: 10px;  
+} 
+
+ .text-white {
+     font-weight: 600;  
+     font-size: 20px;
+ }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- 
+Bicycle Collector 
+
+Assignment 4 - html, javascript, and jquery game 
+              use buttons assigned random values to attain a randomly selected score 
+               a bit of bootstrap style added
+
+Al Curry  February 12, 2018
+
+GWU full stack development program  
+
+this html file calls matchScore.js 
+
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bicycle Collector Game</title>
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap  4.0 - does not require reset.css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+<link rel="shortcuticon"href="assets/images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <html lang="en-us">
+    <div class="jumbotron" id="bg">
+        <h1>  
+            Bicycle Collector</h1>
+    </div>
+
+    <div class="container text-black text-center fill">
+        <p>click on a bike to increase your score to match the goal
+        <br />each bike is assigned a random number of points which changes each game</p>
+        <br />
+        <div id="score">
+            goal:
+            <span id="goalScore"></span>
+
+            <br />
+ 
+            <span id="winnerText"></span>
+            <br /> score:
+            <span id="userScore"></span>
+            <br />
+            <br /> Wins:
+            <span id="win"></span>
+            <br />
+            <br /> Losses:
+            <span id="lose"></span>
+            <br />
+            <br />
+
+
+   
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-primary bikeButton" id="button1">
+                    <img src="assets/images/bike1.jpeg" class="img-thumbnail">
+                </button>
+                <button type="button" class="btn btn-primary bikeButton" id="button2">
+                    <img src="assets/images/bike2.jpeg" class="img-thumbnail">
+                </button>
+                <button type="button" class="btn btn-primary bikeButton" id="button3">
+                    <img src="assets/images/bike3.jpeg" class="img-thumbnail">
+                </button>
+                <button type="button" class="btn btn-primary bikeButton" id="button4">
+                    <img src="assets/images/bike4.jpeg" class="img-thumbnail">
+                </button>
+            </div>
+            <br />
+            <h2 id="overText"></h2>
+            <div class="jumbotron" id="bg2">
+                    <h3 class="text-center text-white" id="gameOver">  
+                        Bicycle Collector</h3>
+                </div>
+        </div> 
+    </div>
+    <script src="./assets/javascript/matchScore.js"></script>
+</body>
+
+</html>
